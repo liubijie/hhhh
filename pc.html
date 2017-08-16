@@ -1,7 +1,13 @@
 <!DOCTYPE HTML>
 <html>
-
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>pc</title>
+</head>
+<body>
+<div>pc端</div>
+</body>
+</html>
 <script type="text/javascript">
 //判断是否移动端，如果是则跳转到指定的URL地址
 function browserRedirect() {
@@ -15,21 +21,12 @@ function browserRedirect() {
 	var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
 	var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
 	if (bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
-	   location.href="phone.html";
+	   alert(11);
 	}else{
-	  
- alert(22);
+	   alert(22);
 	}
 }
 browserRedirect();
 
 </script>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>pc</title>
-</head>
-
-<body>
-<div>pc端</div>
-</body>
-</html>
 
