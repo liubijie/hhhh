@@ -2,13 +2,20 @@
 <html>
 
 <head>
-	<script type="text/javascript">
-
-var is_mobi = navigator.userAgent.toLowerCase().match(/(ipod|iphone|android|coolpad|mmp|smartphone|midp|wap|xoom|symbian|j2me|blackberry|wince)/i) != null;
-			if (is_mobi) {
-				window.location.href = "phone.html";
-			}
-		</script>
+<script type="text/javascript">
+function getCookie(c) {
+    var b;
+    return (b = document.cookie.match(RegExp("(^| )" + c + "\x3d([^;]*)(;|$)"))) ? unescape(b[2]) : ""
+}
+ 
+var browse_edition = getCookie("browse_edition");
+if ("web" != browse_edition) {
+    var ua = navigator.userAgent.toLowerCase();
+    if (/iphone|ipod|android|windows phone|blackberry/.test(ua)) {
+                    this.location = 'phone.html';
+            }
+}
+</script>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>pc</title>
 </head>
