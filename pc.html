@@ -15,10 +15,10 @@ function browserRedirect() {
 	var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
 	var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
 	if (bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
-	    alert(22);
+	   location.href="phone.html";
 	}else{
-	  windows.location.href="phone.html";
-
+	  
+ alert(22);
 	}
 }
 browserRedirect();
